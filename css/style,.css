@@ -1,13 +1,13 @@
 .container{
     background-color: #ccc;
-    height: 200px;
+    height: 500px;
 
     display: flex; /* Propriedade para começar a trabalhar com flexbox */
 
     flex-direction:row;
     /*Column | column-reverse | row-reverse*/
 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     /*warp | wrap-reverse */
 
     /* flex-flow: row nowrap; */
@@ -19,7 +19,7 @@
     align-items: stretch;
     /* Flex-start | flex-end | baseline | center */
 
-    align-content: stretch ;
+    align-content: flex-start;
     /* Flex-end | flex-start | center | space-between | space-around */
 }
 .item{
@@ -27,5 +27,18 @@
     color: #fff;
     padding: 20px;
     margin: 5px;
-    width: 200px;
+
+    height: 30px;
+
+    flex-grow: 1; /* Largura dos itens */
+    flex-shrink: 1;
+    flex-basis: 300px;
+
+    flex: 1 1 300px;
+
 }
+
+.article-01 {flex-shrink: 3;}
+.article-02 { } 
+.article-03 {}
+.article-04 {}
